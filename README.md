@@ -1,11 +1,5 @@
 # Django ELO Rating
 
-## Installation
-
-```bash
-python3 -m pip install --user --upgrade django_elo_rating
-```
-
 ## Configuation
 
 In your `settings.py` add the following lines
