@@ -5,9 +5,9 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="django_elo_rating",
-    version="0.0.1",
+    version="1.0.0",
     author="Sven Fritsch",
-    author_email="sven@fritsch.io",
+    author_email="pypi@fritsch.io",
     description="ELO-Ratings for your django models",
     long_description=long_description,
     long_description_content_type="text/markdown",
@@ -18,6 +18,7 @@ setuptools.setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
         "Development Status :: 3 - Alpha",
+        "Framework :: Django :: 3.0",
         "Framework :: Django :: 2.1",
         "Framework :: Django :: 2.0"
     ],

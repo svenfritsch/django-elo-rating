@@ -1,5 +1,13 @@
 # Django ELO Rating
 
+## Installation
+
+via `pip`
+
+```bash
+pip install django-elo-rating
+```
+
 ## Configuation
 
 In your `settings.py` add the following lines
@@ -12,15 +20,15 @@ ELO_FACTOR_K = 30
 ## Usage
 
 ```python
-from django_elo_rating import EloRated
+from elo import EloRated
 
 
 class Player(EloRated):
-    pass
+    name = models.CharField(max_length=30)
 
 
-player_1 = Player()
-player_2 = Player()
+player_1 = Player(name="John")
+player_2 = Player(name="Jane")
 
 print(player_1.elo_rating)
 # 1000 or whatever you set as ELO_START_VALUE
